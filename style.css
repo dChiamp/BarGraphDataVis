@@ -1,0 +1,135 @@
+/* 
+	GENERAL STYLING
+*/
+* {	
+	box-sizing: border-box;
+	font-family: "Century Gothic", "sans-serif";
+}
+body {
+	font-size: 2em;
+	background-color: #eaedf1;
+}
+.row {
+	font-size: 0;
+}
+.row *:first-child {
+	margin-left: 5%; /* Margin between leftmost element and container */
+}
+.row *:last-child {
+	margin-right: 5%; /* Margin between rightmost element and container */
+}
+.one-column {
+	width: 90%;
+}
+.two-column {
+	width: 43%;
+	margin-left: 2%; /* Margin between elements in a row */
+	margin-right: 2%; /* Margin between elements in a row */
+}
+.three-column {
+	width: 27.3333333333%;
+	margin-right: 2%; /* Margin between elements in a row */
+	margin-left: 2%; /* Margin between elements in a row */
+}
+.five-column {
+	width: 15%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+
+/* 
+	GRAPH STYLING
+*/
+#graph {
+	width: 1200px;
+	margin: 20px auto 0 auto;
+	background-color: white;
+}
+#graph-title {
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	background-color: #323a45;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	text-transform: uppercase;
+}
+#graph div {
+	width: 10%;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	background-color: #27D8F7;
+	vertical-align: bottom;
+	display: inline-block;
+	border: 2px solid white;
+}
+#graph div h1 {
+	width: 100%;
+	height: 20px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+/* 
+	FORM STYLING
+*/
+#data-form {
+	overflow: hidden;
+    width: 700px;
+    margin: 30px auto;
+    background-color: #f7f7f7;
+	color: #5A5A5A;
+    padding: 0;
+    border-radius: 5px;
+	font-size: 0; /* Hack for not needing to comment out whitespace */
+}
+#data-form h1 {
+	text-align: center;
+	font-size: 32px;
+	margin: 0 0 2.5% 0;
+	padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background-color: #323a45;
+	color: white;
+	text-transform: uppercase;
+
+}
+#data-form input, 
+#data-form select {
+	font-size: 16px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	padding: 2%;
+	color: #5A5A5A;
+	border: none;
+	outline: none;
+}
+#data-form input:focus {
+	outline: 2px solid rgb(84, 206, 236);
+}
+#data-form label {
+	font-size: 18px;
+	display: inline-block;
+}
+#data-form .form-grouping {
+	margin: 4% 0;
+	border: none;
+}
+#data-form input[type="submit"] {
+	background-color: rgb(84, 206, 236);
+	color: white;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(23, 174, 213);
+	cursor: pointer;
+	font-size: 26px;
+}
+#data-form input[type="submit"]:hover {
+	background-color: rgb(23, 174, 213);
+}
